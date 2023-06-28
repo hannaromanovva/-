@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+   }
+
+   body{
+    background: #333;
+   }
+
+   section{
+    transform: translateY(150px);
+    position: relative;
+    width: 100vw;
+    padding: 50px;
+   }
+
+   .circle{
+    position: relative;
+    overflow: hidden;
+
+   }
+
+   .circle img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+   }
+   
+
+   .circle.circle1{
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   }
+
+  h2{
+    transform: translateY(-20px);
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+   }
+
+   
+  p{
+    color: #fff;
+    
+   }
+
+   .circle.circle2{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+   }
+
+   .circle.circle1:hover{
+    transform: scale(0.9);
+    transition: .6s ease-in-out;
+   }
+   .circle.circle2:hover{
+    transform: scale(0.9);
+    transition: .6s ease-in-out;
+   }
+   h2:hover{
+    letter-spacing: 6px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+   }
+
+   .footer {
+    width: 100vw;
+    height: 130px;
+    transform: translateY(250px);
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer .wrapper {
+    width: 1222px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_wrapper_year {
+    width: 182px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_wrapper_icons {
+    width: 188px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_wrapper_year_inter {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+.footer_wrapper_year_copy {
+    width: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper_year_2022 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper_year_github {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper_icons_ico {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer_wrapper_icons_ico:hover{
+    transform: scale(0.8);
+    transition: 0.5s;
+
+}
+
+header{
+    z-index: 1;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 80px;
+      background: #fff;
+      padding: 0 50px;
+      transition: 0.5s ease-in-out;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+ 
+  .icon{
+      background-color: #444;
+
+  }
+
+  ul{
+      display: flex;
+  }
+   ul li{
+      list-style: none;
+   }
+   ul li:hover{
+    text-decoration-line: overline;
+    
+   }
+   ul li a{
+      position: relative;
+      color: #333;
+      padding: 5px 20px;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+   }
+   .icon  ul li a{
+      color: #fff;
+   }
+
+   ul li a span{
+      transition: 0.5s;
+
+   }
+
+   .icon  ul li a span:nth-child(2){
+      transform: translateY(-10px);
+   }
+   .icon  ul li a span:nth-child(1){
+      transform: translateY(-30px);
+   }
+
+
+   .brand{
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      padding: 5px 0;
+      overflow: hidden;
+   }
+
+   .brand span{
+      transition: 0.5s;
+      display: block;
+   }
+
+   .brand span:nth-child(1){
+      position: absolute;
+      transform: translateY(-80px);
+      font-size: 25px;
+
+   }
+   .icon .brand span:nth-child(2){
+      transform: translateY(35px);
+
+   }
+   .icon .brand span:nth-child(1){
+      transform: translateY(0px);
+      color: #fff;
+
+   }
+   
